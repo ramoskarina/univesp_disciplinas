@@ -2,9 +2,9 @@
 using namespace std;
 
 main () {
-    int count;
-    int number;
-    int sum;
+    int count = 0;
+    int number = 0;
+    int sum = 0;
 
     do {
         cout << "Insira um novo numero: " << endl;
@@ -12,9 +12,7 @@ main () {
 
         sum += number;
         count++;
-    }
-    
-    while (number != 0);
+    } while (number != 0);
 
     float average = (float) sum / (float)(count - 1);
     cout << "A media da serie eh: " << average << endl;
